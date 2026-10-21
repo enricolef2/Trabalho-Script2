@@ -1,0 +1,47 @@
+{
+  "questoes": [
+    {
+      "enunciado": "Qual palavra-chave declara uma classe em JavaScript?",
+      "alternativas": ["struct", "class", "object"],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual método especial de uma classe é executado automaticamente quando um objeto é criado com new?",
+      "alternativas": ["constructor()", "init()", "create()"],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual prefixo torna uma propriedade ou um método privado dentro de uma classe JavaScript?",
+      "alternativas": ["_ (sublinhado)", "private", "# (cerquilha)"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Para que serve a palavra-chave extends?",
+      "alternativas": [
+        "Importar funções de outro arquivo",
+        "Criar uma classe filha que herda as propriedades e os métodos de outra classe",
+        "Declarar um método estático"
+      ],
+      "correta": 1
+    },
+    {
+      "enunciado": "Qual recurso dos Web Components cria uma sub-árvore DOM isolada, protegendo o HTML e o CSS do componente?",
+      "alternativas": ["Template", "Slot", "Shadow DOM"],
+      "correta": 2
+    },
+    {
+      "enunciado": "Qual comando registra um novo elemento HTML customizado (custom element)?",
+      "alternativas": [
+        "customElements.define()",
+        "document.createTag()",
+        "window.defineElement()"
+      ],
+      "correta": 0
+    },
+    {
+      "enunciado": "Qual atributo da tag script permite usar import e export em um arquivo JavaScript?",
+      "alternativas": ["async", "type=\"module\"", "defer"],
+      "correta": 1
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho 1 - Editor de Menus</title>
+    <link rel="icon" href="data:,">
+    <link rel="stylesheet" href="css/modern-normalize.css">
+    <link rel="stylesheet" href="css/variaveis.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <site-header></site-header>
+    <site-nav data-ativo="editorCor.html"></site-nav>
+    <main>
+        <div class="editor-container">
+
+            <section class="panel">
+                <h2>Formulário de Edição</h2>
+                <form id="formMenu">
+                    <fieldset>
+                        <legend>Gerenciar Itens</legend>
+                        <div class="form-group">
+                            <label for="textoNovoItem">Texto do Item:</label>
+                            <input id="textoNovoItem" type="text" placeholder="Ex: Sobre Mim">
+                        </div>
+                        <div class="btn-group">
+                            <button class="btn" id="botaoAdicionar" type="button">Adicionar</button>
+                            <button class="btn danger" id="botaoRemover" type="button">Remover</button>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Aparência Global do Menu</legend>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="corFundo">Cor de Fundo (Menu):</label>
+                                <input id="corFundo" type="color" value="#f3f4f6">
+                            </div>
+                            <div class="form-group">
+                                <label for="gapMenu">Espaçamento dos Itens (px):</label>
+                                <input id="gapMenu" type="number" value="10" min="0">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="urlImagem">URL da Imagem (Logotipo):</label>
+                            <input id="urlImagem" type="url" placeholder="https://exemplo.com/logo.png">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Estilo dos Itens</legend>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="corTexto">Cor do Texto:</label>
+                                <input id="corTexto" type="color" value="#333333">
+                            </div>
+                            <div class="form-group">
+                                <label for="corFundoItem">Fundo do Item:</label>
+                                <input id="corFundoItem" type="color" value="#ffffff">
+                            </div>
+                            <div class="form-group">
+                                <label for="tamanhoFonte">Tamanho da Fonte (px):</label>
+                                <input id="tamanhoFonte" type="number" value="16" min="10">
+                            </div>
+                            <div class="form-group checkbox-group">
+                                <input id="pesoFonte" type="checkbox">
+                                <label for="pesoFonte">Negrito</label>
+                            </div>
+                            <div class="form-group">
+                                <label for="larguraBorda">Largura da Borda (px):</label>
+                                <input id="larguraBorda" type="number" value="1" min="0">
+                            </div>
+                            <div class="form-group">
+                                <label for="raioBorda">Raio da Borda (px):</label>
+                                <input id="raioBorda" type="number" value="4" min="0">
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </section>
+
+
+            <section class="panel">
+                <h2>Menu Gerado</h2>
+                <div class="preview-area">
+                    <nav id="resultadoMenu">
+                        <img id="imagemGerada" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5TnMifCmOexbMGLZVDVRqHDMQq1fw4MxT99gDKtXjEw&s=10" alt="Logotipo do menu">
+                        <ul id="listaGerada">
+                            <li>Início</li>
+                            <li>Serviços</li>
+                            <li>Contato</li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </div>
+    </main>
+    <site-footer></site-footer>
+
+    <script src="js/layout.js"></script>
+    <script src="scriptEditor.js"></script>
+</body>
+
+</html>
